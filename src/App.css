@@ -1,38 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Noto+Sans&family=Nunito+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+li {
+  list-style: none;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.Navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  flex: 0.2;
+  padding: 50px 0 0 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MainContent {
+  flex: 0.8;
+  padding-top: 50px;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+.Navbar span {
+  color: #F7542E;
+}
+
+.Navbar ul{
+  margin-top: 90px;
+}
+
+.Navbar li {
+  color: #9E9E9E;
+  padding: 15px 0;
+}
+
+.Navbar li:hover {
+  cursor: pointer;
+  color: #090F31;
+  font-weight: bold;
+}
+
+.active {
+  color: #090F31 !important;
+  font-weight: bold;
+}
+
+.MainContent h2 {
+  color: #4F4F4F;
+}
+
+
+
+
+button {
+  width: 81px;
+  height: 36px;
+  border: none;
+  background: #E0E0E0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  color: #3F3F3F;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.default_one:hover {
+  color: red;
+}
+
+
+button:hover{
+  cursor: pointer;
+}
+
+
+.btn-container {
+  display: grid;
+  grid-template-areas: 
+    "one one two two"
+    "three three four four"
+    "five five six six"
+    "seven seven seven seven"
+    "eight eight nine nine"
+    "ten ten eleven eleven "
+    "twelve thirteen fourteen fourteen"
+    "fifteen sixteen seventeen eighteen"
+    "ninteen twenty twenty_one twenty_two";
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+}
+
+
+.Button {
+  margin: 20px 0;
+}
+
+.twenty {
+  margin-top: 20px;
 }
