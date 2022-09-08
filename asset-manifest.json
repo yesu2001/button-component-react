@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/button-component-react/static/css/main.6b0fe676.css",
+    "main.js": "/button-component-react/static/js/main.12912603.js",
+    "index.html": "/button-component-react/index.html",
+    "main.6b0fe676.css.map": "/button-component-react/static/css/main.6b0fe676.css.map",
+    "main.12912603.js.map": "/button-component-react/static/js/main.12912603.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b0fe676.css",
+    "static/js/main.12912603.js"
+  ]
+}
